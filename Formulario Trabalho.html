@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        form {
+            width: 30%;
+            border: 1px solid silver;
+            margin: auto;
+            padding: 5%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 2122);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        div {
+            margin-bottom: 1px;
+
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Formulario</h2>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="name"><strong>Nome:</strong></label>
+            <input type="text" id="name" placeholder="Nome completo" required>
+        </div>
+        <div>
+            <label for="matricula"><strong>Matricula:</strong></label>
+            <input type="text" id="matricula" name="matricula"  required>
+        </div>
+        <div>
+            <label for="periodo"><strong>Periodo:</strong></label><br>
+            <input type="radio" id="amanha" name="periodo">
+            <label for="amanha"><strong>Manhã</strong></label><br>
+            <input type="radio" id="atarde" name="periodo">
+            <label for="atarde"><strong>Tarde</strong></label><br>
+            <input type="radio" id="anoite" name="periodo">
+            <label for="anoite"><strong>Noite</strong></label><br>
+
+
+        </div>
+        <div>
+            <label for="data"><strong>Data e Hora:</strong></label>
+            <input type="datetime-local" id="data" name="data" required>
+        </div>
+        <div>
+            <label for="lab"><strong>Salas:</strong></label>
+            <select name="laboratorio" id="lab">
+                <option value="select">Selecione a sala</option>
+                <option value="lab01">Lab-01</option>
+                <option value="lab02">Lab-02</option>
+                <option value="lab03">Lab-03</option>
+                <option value="lab04">Lab-04</option>
+                <option value="lab05">Lab-05</option>
+                <option value="lab06">Lab-06</option>
+                <option value="mult01">Mult-01</option>
+                <option value="mult02">Mult-01</option>
+                <option value="gest">Gestão</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Selecione os problemas</legend>
+                <input type="checkbox" name="prob" id="apc">
+                <label for="apc">Rede WIFI</label>
+                <input type="checkbox" name="prob" id="bpc">
+                <label for="bpc">Comp. não liga</label>
+                <input type="checkbox" name="prob" id="cpc">
+                <label for="cpc">Teclado</label>
+                <input type="checkbox" name="prob" id="dpc">
+                <label for="dpc">Mouse</label>
+                <input type="checkbox" name="prob" id="aproj">
+                <label for="aproj">Projetor</label>
+                <input type="checkbox" name="prob" id="ainf">
+                <label for="ainf">Ventilador</label>
+                <input type="checkbox" name="prob" id="binf">
+                <label for="binf">Tomadas</label>
+                <input type="checkbox" name="prob" id="cinf">
+                <label for="cinf">Quadro negro</label>
+                <input type="checkbox" name="prob" id="dinf">
+                <label for="dinf">Janelas</label>
+                <input type="checkbox" name="prob" id="einf">
+                <label for="einf">Porta</label>
+                <input type="checkbox" name="prob" id="finf">
+                <label for="finf">Mesas</label>
+                <input type="checkbox" name="prob" id="atel">
+                <label for="atel">Televisor</label>
+            </fieldset>
+        </div>
+        <label for="imsg"> Detalhamento</label><br>
+        <textarea name="msg" id="imsg" cols="auto" rows="5" placeholder="Descreva o problema"></textarea>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+
+
+
+
+</body>
+
+</html>
