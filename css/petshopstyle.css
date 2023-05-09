@@ -11,3 +11,45 @@ header h1{
     margin: 0;
     height: 84px;
 }
+nav{
+    text-align: center;
+    padding: 15px 0;
+}
+nav li{
+    display: inline;
+    background-repeat: no-repeat;
+    background-image: url(../img/patinha-preta.png);
+    padding-right: 27px;
+    margin-right: 10px;
+    background-position: center right;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: #6dd463;
+
+}
+#item_contato{
+    background-image: none;
+    padding: 0;
+    margin: 0;
+
+}
+.fundo-verde{
+    background-color: #bdff9c;
+
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+    padding: 56px 0;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container .col{
+    width: 430px;
+}
